@@ -57,15 +57,17 @@ async function applyNewConfig(engineName, gusName, selectedEngine, selectedGUS) 
     headerTitle()
     console.info('Selected Engine.ini: ', engineName);
     console.info('Selected GameUserSettings.ini: ', gusName);
-    fs.appendFile(confDir + 'new-config-mark', '', (err) => {});
-    fs.rename(confDir + 'Engine.ini', confDir + 'Engine-ori.ini', (err) => {
-        fs.appendFile(confDir + 'Engine.ini', selectedEngine, (err) => {});
-    });
-    fs.rename(confDir + 'GameUserSettings.ini', confDir + 'GameUserSettings-ori.ini', (err) => {
-        console.log('\nOriginal Configs backed up!\n');
-        fs.appendFile(confDir + 'GameUserSettings.ini', selectedGUS, async (err) => {
-            console.log('Selected Configs Applied!\n');
-            await closeWindow()
+    fs.appendFile(confDir + 'new-config-mark', '', async (err) => {
+        fs.rename(confDir + 'Engine.ini', confDir + 'Engine-ori.ini', async (err) => {
+            fs.appendFile(confDir + 'Engine.ini', selectedEngine, async (err) => {
+                fs.rename(confDir + 'GameUserSettings.ini', confDir + 'GameUserSettings-ori.ini', async (err) => {
+                    console.log('\nOriginal Configs backed up!\n');
+                    fs.appendFile(confDir + 'GameUserSettings.ini', selectedGUS, async (err) => {
+                        console.log('Selected Configs Applied!\n');
+                        await closeWindow()
+                    });
+                });
+            });
         });
     });
 }

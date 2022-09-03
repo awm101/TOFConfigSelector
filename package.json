@@ -1,7 +1,7 @@
 {
-  "name": "tof-afk-config",
-  "version": "1.0.0",
-  "bin": "afk.js",
+  "name": "tof-config-selector",
+  "version": "0.1.0",
+  "bin": "tof-config-selector.js",
   "pkg": {
     "assets": "configs/**/*",
     "target": [
@@ -9,21 +9,22 @@
     ],
     "outputPath": "dist"
   },
-  "description": "A mini script that lets you change to AFK (Away From Keyboard) graphics configuration for low CPU & GPU usage in Tower of Fantasy",
-  "main": "afk.js",
+  "description": "A mini tool that lets you switch between different configurations for Tower of Fantasy without manually renaming files.",
+  "main": "tof-config-selector.js",
   "dependencies": {
     "fs": "^0.0.1-security",
     "inquirer": "^8.0.0",
     "os": "^0.1.2",
+    "pkg": "^5.8.0",
     "readline": "^1.3.0"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "node afk.js"
+    "test": "node tof-config-selector.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/awm101/tof-afk-config.git"
+    "url": "git+https://github.com/awm101/TOFConfigSelector.git"
   },
   "keywords": [
     "tower-of-fantasy"
@@ -31,7 +32,7 @@
   "author": "awm101",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/awm101/tof-afk-config/issues"
+    "url": "https://github.com/awm101/TOFConfigSelector/issues"
   },
-  "homepage": "https://github.com/awm101/tof-afk-config#readme"
+  "homepage": "https://github.com/awm101/TOFConfigSelector#readme"
 }
