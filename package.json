@@ -1,0 +1,37 @@
+{
+  "name": "tof-afk-config",
+  "version": "1.0.0",
+  "bin": "afk.js",
+  "pkg": {
+    "assets": "configs/**/*",
+    "target": [
+      "node16-win-x64"
+    ],
+    "outputPath": "dist"
+  },
+  "description": "A mini script that lets you change to AFK (Away From Keyboard) graphics configuration for low CPU & GPU usage in Tower of Fantasy",
+  "main": "afk.js",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "inquirer": "^8.0.0",
+    "os": "^0.1.2",
+    "readline": "^1.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node afk.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/awm101/tof-afk-config.git"
+  },
+  "keywords": [
+    "tower-of-fantasy"
+  ],
+  "author": "awm101",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/awm101/tof-afk-config/issues"
+  },
+  "homepage": "https://github.com/awm101/tof-afk-config#readme"
+}
