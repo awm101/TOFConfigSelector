@@ -3,7 +3,7 @@ A mini tool that lets you switch between different configurations for Tower of F
 
 <h2>Overview</h2>
 This tool gives you the ability to select and apply which Engine.ini and GameUserSettings.ini you want to use in an instant.
-Both files mentioned is actually the core configurations for Tower of Fantasy to determine the game's visual quality.
+Both files mentioned are actually the core configurations for Tower of Fantasy to determine the game's visual quality.
 Those files are located in 'C:\Users\YourPCName\AppData\Local\Hotta\Saved\Config\WindowsNoEditor'.
 
 <h2>How To Download</h2>
